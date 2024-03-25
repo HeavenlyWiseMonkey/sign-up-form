@@ -1,0 +1,47 @@
+@font-face {
+    font-family: norseBold;
+    src: url(Norse-Bold.otf);
+}
+
+body {
+    margin: 0;
+}
+
+.content {
+    display: flex;
+}
+
+.text-area {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+}
+
+.image-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url("./leaves.jpg");
+    background-size: cover;
+    width: 30vw;
+    height: 100vh;
+    color: rgb(255,255,255);
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: norseBold;
+    font-size: 5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.banner-odin {
+    height: 120px;
+}
+
+.credit {
+    display: flex;
+    justify-content: center;
+}
