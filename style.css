@@ -3,18 +3,19 @@
     src: url(Norse-Bold.otf);
 }
 
+:root {
+    --left-spacing: 3rem;
+    --right-spacing: 20rem;
+    --vertical-spacing: 9rem;
+}
+
 body {
     margin: 0;
+    font-family: sans-serif;
 }
 
 .content {
     display: flex;
-}
-
-.text-area {
-    display: flex;
-    flex-direction: column;
-    width: 70vw;
 }
 
 .image-area {
@@ -44,4 +45,34 @@ body {
 .credit {
     display: flex;
     justify-content: center;
+    position: relative;
+    top: 11rem;
+}
+
+.credit a {
+    color: rgb(255,255,255);
+}
+
+.text-area {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    margin-top: var(--vertical-spacing);
+    margin-bottom: var(--vertical-spacing);
+}
+
+.text-area p,
+.input-area form {
+    margin-left: var(--left-spacing);
+    margin-right: var(--right-spacing);
+}
+
+.text-area p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.input-area {
+    box-shadow: 0 3px 5px 0px rgba(0,0,0,0.4);
 }
