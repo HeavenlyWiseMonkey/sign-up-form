@@ -33,7 +33,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: norseBold;
+    font-family: norseBold , 'Times New Roman', Times, serif;
     font-size: 5rem;
     background-color: rgba(0,0,0,0.4);
 }
@@ -57,12 +57,15 @@ body {
     display: flex;
     flex-direction: column;
     width: 70vw;
+    height: 100vh;
     margin-top: var(--vertical-spacing);
     margin-bottom: var(--vertical-spacing);
 }
 
 .text-area p,
-.input-area form {
+.input-area form, 
+button,
+.input-area > div {
     margin-left: var(--left-spacing);
     margin-right: var(--right-spacing);
 }
@@ -71,8 +74,62 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.input-area,
+button {
+    margin-bottom: 30px;
+}
+
+.input-area, button, input:focus {
+    box-shadow: 0 3px 5px 0px rgba(0,0,0,0.4);
 }
 
 .input-area {
-    box-shadow: 0 3px 5px 0px rgba(0,0,0,0.4);
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
+input, label {
+    display: block;
+}
+
+label {
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+}
+
+input {
+    font-size: 1rem;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+input:focus {
+    outline: 1px solid rgb(51,51,255);
+}
+
+.input-area > div {
+    display: flex;
+    gap: 70px;
+    margin-top: 30px;
+}
+
+button {
+    color: rgb(255,255,255);
+    background-color: rgba(89,109,72,255);
+    font-weight: bold;
+    border: 0;
+    border-radius: 7px;
+    padding: 15px 55px;
+}
+
+.text-area .login-text, button {
+    font-size: 1rem;
+}
+
+.login-text a {
+    text-decoration: none;
+    color: green;
 }
